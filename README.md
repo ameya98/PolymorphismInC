@@ -1,7 +1,7 @@
 # Runtime Polymorphism in C
 
 ## Description 
-An example of how to implement runtime polymorphism in C vua function-pointers.
+An example of how to implement runtime polymorphism in C via function-pointers. This is basically how the Linux kernel does it!
 
 * *algorithm.h* defines the struct *algorithm_ops* that contains function-pointers. Algorithms instantiate *algorithm_ops* with pointers to their own definitions of these functions.
 ```C
