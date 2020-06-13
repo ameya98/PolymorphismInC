@@ -4,9 +4,9 @@
 struct algorithm_ops {
 	/* Initialize private data. */
 	void (*init)();
-    /* Called when a new packet of data is received. */
+	/* Called when a new packet of data is received. */
 	int (*on_recv)();
-    /* Reset state. */
+	/* Reset state. */
 	void (*reset)();
 	/* Cleanup private data. */
 	void (*teardown)();

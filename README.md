@@ -19,17 +19,17 @@ Here, the code that is executed by *alg -> on_recv()* function is different for 
 * *algorithm.h* defines the struct *algorithm_ops* that contains function-pointers. Algorithms instantiate *algorithm_ops* with pointers to their own definitions of these functions.
 ```C
 struct algorithm_ops {
-	/* Initialize private data. */
-	void (*init)();
+    /* Initialize private data. */
+    void (*init)();
     /* Called when a new packet of data is received. */
-	int (*on_recv)();
+    int (*on_recv)();
     /* Reset state. */
-	void (*reset)();
-	/* Cleanup private data. */
-	void (*teardown)();
+    void (*reset)();
+    /* Cleanup private data. */
+    void (*teardown)();
 
-	/* Name of the algorithm. */
-	char name[ALG_NAME_MAXCHAR];
+    /* Name of the algorithm. */
+    char name[ALG_NAME_MAXCHAR];
 };
 ```
 * *baseline.\** and *baseline_x2.\** are two different algorithms that implement the functions. For example, in *baseline.c*, you will find an instance of *algorithm_ops* as:
