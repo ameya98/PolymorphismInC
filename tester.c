@@ -37,7 +37,7 @@ int main(){
     algorithm_ops* alg = get_algorithm_ops(&algorithms, "baseline");
     assert(strcmp(alg -> name, "baseline") == 0);
 
-    printf("%d\n", alg -> on_recv());
+    printf("Returned from 'on_recv()' of baseline: %d\n", alg -> on_recv());
 
     // Add 'baseline_x2' into list of all algorithms.
     register_algorithm(&algorithms, &baseline_x2_ops);
@@ -49,7 +49,7 @@ int main(){
     alg = get_algorithm_ops(&algorithms, "baseline_x2");
     assert(strcmp(alg -> name, "baseline_x2") == 0);
 
-    printf("%d\n", alg -> on_recv());
+    printf("Returned from 'on_recv()' of baseline_x2: %d\n", alg -> on_recv());
 
     // Deregister 'baseline'.
     deregister_algorithm(&algorithms, "baseline");
