@@ -1,8 +1,21 @@
 # Runtime Polymorphism in C
 
 ## Description 
-An example of how to implement runtime polymorphism in C via function-pointers. This is basically how the Linux kernel does it!
+An example of how to implement/mimic runtime polymorphism in C via function-pointers. This is basically how the Linux kernel does it!
 
+Runtime polymorphism refers to the capability to resolve, at runtime, the actual function called during a function call.
+This is a example, simplified from *tester.c*:
+```C
+    algorithm_ops* alg;
+    alg = get_algorithm_ops(&algorithms, "baseline");
+    alg -> on_recv();
+
+    alg = get_algorithm_ops(&algorithms, "baseline_x2");
+    alg -> on_recv();
+```
+Here, the code that is executed by *alg -> on_recv()* function is different for each of the two different calls! 
+
+## Source
 * *algorithm.h* defines the struct *algorithm_ops* that contains function-pointers. Algorithms instantiate *algorithm_ops* with pointers to their own definitions of these functions.
 ```C
 struct algorithm_ops {
