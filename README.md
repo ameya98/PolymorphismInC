@@ -6,6 +6,9 @@ An example of how to implement/mimic runtime polymorphism in C via function-poin
 Runtime polymorphism refers to the capability to resolve, at runtime, the actual function called during a function call.
 This is a example, simplified from *tester.c*:
 ```C
+    register_algorithm(&algorithms, &baseline_ops);
+    register_algorithm(&algorithms, &baseline_x2_ops);
+
     algorithm_ops* alg;
     alg = get_algorithm_ops(&algorithms, "baseline");
     alg -> on_recv();
