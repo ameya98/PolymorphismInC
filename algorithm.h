@@ -11,5 +11,6 @@ struct algorithm_ops {
 	/* Cleanup private data. */
 	void (*teardown)();
 
+	/* Name of the algorithm. */
 	char name[ALG_NAME_MAXCHAR];
 };
