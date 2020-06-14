@@ -3,13 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
-#ifndef ALGORITHM_H
-    #include "algorithm.h"
-#endif
-
-#ifndef QUEUE_H
-    #include "queue.h"
-#endif
+#include "algorithm.h"
+#include "queue.h"
 
 // We insert at the back of the queue, and start searching for deletion from the front, like a sliding window.
 // This is optimal in terms of traversal when packets arrive in-order.
