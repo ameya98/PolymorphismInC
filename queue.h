@@ -1,3 +1,4 @@
+#ifndef QUEUE_H
 #define QUEUE_H
 struct node {
     struct node* next;
@@ -20,3 +21,5 @@ void deregister_algorithm(queue* q, char* alg_name);
 node* search(queue* q, char* alg_name);
 algorithm_ops* get_algorithm_ops(queue* q, char* alg_name);
 void print_algorithms(queue* q);
+
+#endif

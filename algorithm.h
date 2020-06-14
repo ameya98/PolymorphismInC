@@ -1,3 +1,4 @@
+#ifndef ALGORITHM_H
 #define ALGORITHM_H
 #define ALG_NAME_MAXCHAR 20
 
@@ -14,3 +15,5 @@ struct algorithm_ops {
 	/* Name of the algorithm. */
 	char name[ALG_NAME_MAXCHAR];
 };
+
+#endif

@@ -1,10 +1,5 @@
-#ifndef ALGORITHM_H
-    #include "algorithm.h"
-#endif
-
-#ifndef BASELINE_X2_H
-    #include "baseline_x2.h"
-#endif
+#include "algorithm.h"
+#include "baseline_x2.h"
 
 void baseline_x2_init(){
 

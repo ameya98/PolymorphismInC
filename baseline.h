@@ -1,3 +1,4 @@
+#ifndef BASELINE_H
 #define BASELINE_H
 
 void baseline_init();
@@ -6,3 +7,5 @@ void baseline_reset();
 void baseline_teardown();
 
 extern struct algorithm_ops baseline_ops;
+
+#endif

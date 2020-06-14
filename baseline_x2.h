@@ -1,3 +1,4 @@
+#ifndef BASELINE_X2_H
 #define BASELINE_X2_H
 
 void baseline_x2_init();
@@ -6,3 +7,5 @@ void baseline_x2_reset();
 void baseline_x2_teardown();
 
 extern struct algorithm_ops baseline_x2_ops;
+
+#endif

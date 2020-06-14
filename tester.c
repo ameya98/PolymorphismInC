@@ -2,21 +2,10 @@
 #include <assert.h>
 #include <string.h>
 
-#ifndef QUEUE_H
-    #include "queue.h"
-#endif
-
-#ifndef ALGORITHM_H
-    #include "algorithm.h"
-#endif
-
-#ifndef BASELINE_H
-    #include "baseline.h"
-#endif
-
-#ifndef BASELINE_X2_H
-    #include "baseline_x2.h"
-#endif
+#include "queue.h"
+#include "algorithm.h"
+#include "baseline.h"
+#include "baseline_x2.h"
 
 typedef struct queue queue;
 typedef struct algorithm_ops algorithm_ops;
