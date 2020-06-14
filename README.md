@@ -35,7 +35,7 @@ struct algorithm_ops {
     char name[ALG_NAME_MAXCHAR];
 };
 ```
-* *baseline.\** and *baseline_x2.\** are two different algorithms that implement the functions. For example, in *baseline.c*, you will find an instance of *algorithm_ops* as:
+* *baseline.\** and *baseline_x2.\** define two different algorithms that implement this interface. For example, in *baseline.c*, you will find an instance of *algorithm_ops* as:
 ```C
 struct algorithm_ops baseline_ops = {
     .name = "baseline",
