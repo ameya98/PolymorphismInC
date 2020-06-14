@@ -1,7 +1,7 @@
 # Runtime Polymorphism in C
 
 ## Description 
-An example of how to implement/mimic runtime polymorphism in C via function-pointers. This is basically how the Linux kernel does it!
+An example of how to emulate runtime polymorphism in C via function-pointers. This is basically how the Linux kernel does it!
 
 Runtime polymorphism refers to the capability to resolve, at runtime, the actual function called during a function call.
 This is a example, simplified from *tester.c*:
